@@ -810,3 +810,6 @@ truncate-console-readout.description=缩短控制台输出的内容在一行中.
 Handle magnet links=处理磁力链接
 Default magnet app=默认磁力链接应用
 Open default apps settings=打开系统默认应用设置
+Default magnet handler status=默认磁力处理器状态
+Not default=非默认
+Magnet protocol is enabled but this app is not the default handler. Please update system settings.=磁力协议已启用，但当前应用不是默认处理器，请在系统设置中修改。

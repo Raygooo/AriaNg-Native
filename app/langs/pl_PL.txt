@@ -810,3 +810,6 @@ truncate-console-readout.description=Przytnij wyjście konsoli do jednej linii.
 Handle magnet links=Obsługa linków magnet
 Default magnet app=Domyślna aplikacja dla linków magnet
 Open default apps settings=Otwórz ustawienia domyślnych aplikacji
+Default magnet handler status=Status domyślnego obsługiwacza magnet
+Not default=Nie jest domyślny
+Magnet protocol is enabled but this app is not the default handler. Please update system settings.=Protokół magnet jest włączony, ale ta aplikacja nie jest domyślnym obsługiwaczem. Zaktualizuj ustawienia systemu.

@@ -203,7 +203,10 @@
                 invokeMainProcessMethod('render-set-native-config-exec-detached-command-on-startup', value);
             },
             setEnableMagnetProtocol: function (value) {
-                invokeMainProcessMethod('render-set-native-config-enable-magnet-protocol', value);
+                return invokeMainProcessMethodSync('render-set-native-config-enable-magnet-protocol', value);
+            },
+            getMagnetProtocolStatusAsync: function () {
+                return invokeMainProcessMethodAsync('render-get-native-config-magnet-protocol-status');
             },
             openSystemDefaultAppsSetting: function () {
                 return invokeMainProcessMethodAsync('render-open-system-default-apps-setting');

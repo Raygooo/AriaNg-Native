@@ -810,3 +810,6 @@ truncate-console-readout.description=Обрезает вывод консоли 
 Handle magnet links=Обрабатывать magnet-ссылки
 Default magnet app=Приложение по умолчанию для magnet-ссылок
 Open default apps settings=Открыть настройки приложений по умолчанию
+Default magnet handler status=Статус обработчика magnet по умолчанию
+Not default=Не по умолчанию
+Magnet protocol is enabled but this app is not the default handler. Please update system settings.=Протокол magnet включён, но это приложение не является обработчиком по умолчанию. Обновите настройки системы.

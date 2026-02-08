@@ -810,3 +810,6 @@ truncate-console-readout.description=Truncar la lectura de la consola para que q
 Handle magnet links=Gestionar enlaces magnet
 Default magnet app=Aplicación predeterminada para enlaces magnet
 Open default apps settings=Abrir la configuración de aplicaciones predeterminadas
+Default magnet handler status=Estado del manejador magnet predeterminado
+Not default=No predeterminado
+Magnet protocol is enabled but this app is not the default handler. Please update system settings.=El protocolo magnet está habilitado, pero esta aplicación no es el manejador predeterminado. Actualiza la configuración del sistema.

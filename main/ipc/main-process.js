@@ -48,6 +48,22 @@ let setMagnetProtocolEnabled = function (enabled) {
     }
 };
 
+let isDefaultMagnetProtocol = function () {
+    try {
+        if (app.isPackaged) {
+            return app.isDefaultProtocolClient('magnet');
+        }
+
+        if (process.defaultApp && process.argv.length > 1) {
+            return app.isDefaultProtocolClient('magnet', process.execPath, [path.resolve(process.argv[1])]);
+        }
+
+        return app.isDefaultProtocolClient('magnet');
+    } catch (ex) {
+        return false;
+    }
+};
+
 ipcMain.on('render-sync-get-runtime-environment', (event) => {
     if (!process || !process.versions) {
         return null;
@@ -179,7 +195,20 @@ ipcMain.on('render-set-native-config-exec-detached-command-on-startup', (event, 
 ipcMain.on('render-set-native-config-enable-magnet-protocol', (event, value) => {
     config.enableMagnetProtocol = !!value;
     config.save('enableMagnetProtocol');
-    setMagnetProtocolEnabled(config.enableMagnetProtocol);
+    const registered = setMagnetProtocolEnabled(config.enableMagnetProtocol);
+
+    event.returnValue = {
+        enabled: config.enableMagnetProtocol,
+        isDefault: isDefaultMagnetProtocol(),
+        registered: registered
+    };
+});
+
+ipcMain.handle('render-get-native-config-magnet-protocol-status', () => {
+    return {
+        enabled: !!config.enableMagnetProtocol,
+        isDefault: isDefaultMagnetProtocol()
+    };
 });
 
 ipcMain.handle('render-get-native-config-last-check-updates-time', (event) => {

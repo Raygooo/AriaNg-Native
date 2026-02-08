@@ -810,3 +810,6 @@ truncate-console-readout.description=Konsolenausgabe kürzen, damit sie in eine 
 Handle magnet links=Magnet-Links verarbeiten
 Default magnet app=Standard-App für Magnet-Links
 Open default apps settings=Systemeinstellungen für Standard-Apps öffnen
+Default magnet handler status=Standardstatus für Magnet-Handler
+Not default=Nicht Standard
+Magnet protocol is enabled but this app is not the default handler. Please update system settings.=Das Magnet-Protokoll ist aktiviert, aber diese App ist nicht der Standard-Handler. Bitte die Systemeinstellungen aktualisieren.

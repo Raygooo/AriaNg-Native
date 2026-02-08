@@ -152,6 +152,7 @@
             isSupportReconnect: aria2SettingService.canReconnect(),
             isSupportBlob: ariaNgFileService.isSupportBlob(),
             isSupportDarkMode: ariaNgSettingService.isBrowserSupportDarkMode(),
+            magnetProtocolStatus: null,
             importSettings: null,
             exportSettings: null,
             exportSettingsCopied: false,
@@ -443,7 +444,15 @@
         };
 
         $scope.setEnableMagnetProtocol = function (value) {
-            ariaNgNativeElectronService.setEnableMagnetProtocol(value);
+            var status = ariaNgNativeElectronService.setEnableMagnetProtocol(value);
+
+            if (status) {
+                $scope.context.magnetProtocolStatus = status;
+            }
+
+            if (value && status && !status.isDefault) {
+                ariaNgCommonService.showInfo('Default magnet app', 'Magnet protocol is enabled but this app is not the default handler. Please update system settings.');
+            }
         };
 
         $scope.openSystemDefaultAppsSetting = function () {
@@ -455,6 +464,14 @@
                 ariaNgCommonService.showError('Failed to open system settings.');
             });
         };
+
+        ariaNgNativeElectronService.getMagnetProtocolStatusAsync().then(function (status) {
+            if (!status) {
+                return;
+            }
+
+            $scope.context.magnetProtocolStatus = status;
+        });
 
         $scope.browseAndSetExecCommandOnStartup = function () {
             ariaNgNativeElectronService.showOpenFileDialogAsync([{

@@ -810,3 +810,6 @@ truncate-console-readout.description=Tronca l'output della console su una singol
 Handle magnet links=Gestisci link magnet
 Default magnet app=App predefinita per i link magnet
 Open default apps settings=Apri le impostazioni delle app predefinite
+Default magnet handler status=Stato del gestore magnet predefinito
+Not default=Non predefinito
+Magnet protocol is enabled but this app is not the default handler. Please update system settings.=Il protocollo magnet è abilitato, ma questa app non è il gestore predefinito. Aggiorna le impostazioni di sistema.
