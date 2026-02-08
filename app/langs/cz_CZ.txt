@@ -809,8 +809,8 @@ truncate-console-readout.name=Oříznout výstup v konzoli
 truncate-console-readout.description=Ořízne výstup do konzole tak, aby se vešel na jeden řádek.
 [global]
 Handle magnet links=Obsluhovat magnet odkazy
-Default magnet app=Výchozí aplikace pro magnet odkazy
 Open default apps settings=Otevřít nastavení výchozích aplikací
-Default magnet handler status=Stav výchozího obsluhovače magnet
-Not default=Není výchozí
 Magnet protocol is enabled but this app is not the default handler. Please update system settings.=Protokol magnet je povolen, ale tato aplikace není výchozí obsluhovač. Aktualizujte nastavení systému.
+Is default magnet handler=Výchozí obsluhovač magnet
+Yes=Ano
+No=Ne

@@ -809,8 +809,8 @@ truncate-console-readout.name=縮短控制台輸出內容
 truncate-console-readout.description=縮短控制台輸出的內容在一行中.
 [global]
 Handle magnet links=處理磁力連結
-Default magnet app=預設磁力連結應用
 Open default apps settings=開啟系統預設應用程式設定
-Default magnet handler status=預設磁力處理器狀態
-Not default=非預設
 Magnet protocol is enabled but this app is not the default handler. Please update system settings.=磁力協定已啟用，但目前應用程式不是預設處理器，請到系統設定中修改。
+Is default magnet handler=是否為預設磁力處理器
+Yes=是
+No=否

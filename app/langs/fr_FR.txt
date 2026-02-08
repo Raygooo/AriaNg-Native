@@ -809,8 +809,8 @@ truncate-console-readout.name=Raccourcit la sortie de la console
 truncate-console-readout.description=Raccourcit la sortie de la console à une seule ligne.
 [global]
 Handle magnet links=Gérer les liens magnet
-Default magnet app=Application par défaut pour les liens magnet
 Open default apps settings=Ouvrir les paramètres des applications par défaut
-Default magnet handler status=Statut du gestionnaire magnet par défaut
-Not default=Non par défaut
 Magnet protocol is enabled but this app is not the default handler. Please update system settings.=Le protocole magnet est activé, mais cette application n'est pas le gestionnaire par défaut. Veuillez mettre à jour les paramètres système.
+Is default magnet handler=Gestionnaire magnet par défaut
+Yes=Oui
+No=Non
