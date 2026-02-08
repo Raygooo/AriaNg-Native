@@ -807,6 +807,7 @@ stop.name=Automatické vypnutí
 stop.description=Zastaví aplikaci po uplynutí SEC sekund. Pokud je zadáno 0, tato funkce je zakázána.
 truncate-console-readout.name=Oříznout výstup v konzoli
 truncate-console-readout.description=Ořízne výstup do konzole tak, aby se vešel na jeden řádek.
+[global]
 Handle magnet links=Obsluhovat magnet odkazy
 Default magnet app=Výchozí aplikace pro magnet odkazy
 Open default apps settings=Otevřít nastavení výchozích aplikací

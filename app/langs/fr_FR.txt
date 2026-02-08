@@ -807,6 +807,7 @@ stop.name=Temps d'arrêt automatique
 stop.description=Arrête l'application au bout de SEC secondes. Si la valeur 0 est donnée, cette fonction est désactivée.
 truncate-console-readout.name=Raccourcit la sortie de la console
 truncate-console-readout.description=Raccourcit la sortie de la console à une seule ligne.
+[global]
 Handle magnet links=Gérer les liens magnet
 Default magnet app=Application par défaut pour les liens magnet
 Open default apps settings=Ouvrir les paramètres des applications par défaut

@@ -807,6 +807,7 @@ stop.name=Automatische Abschaltzeit
 stop.description=Anwendung stoppen, nachdem SEC Sekunden vergangen sind. Bei 0 ist diese Funktion deaktiviert.
 truncate-console-readout.name=Konsolenausgabe kürzen
 truncate-console-readout.description=Konsolenausgabe kürzen, damit sie in eine Zeile passt.
+[global]
 Handle magnet links=Magnet-Links verarbeiten
 Default magnet app=Standard-App für Magnet-Links
 Open default apps settings=Systemeinstellungen für Standard-Apps öffnen

@@ -807,6 +807,7 @@ stop.name=自動關閉時間
 stop.description=在此選項設定的時間(秒)後關閉應用程式. 如果設定為 0, 此功能將停用.
 truncate-console-readout.name=縮短控制台輸出內容
 truncate-console-readout.description=縮短控制台輸出的內容在一行中.
+[global]
 Handle magnet links=處理磁力連結
 Default magnet app=預設磁力連結應用
 Open default apps settings=開啟系統預設應用程式設定
