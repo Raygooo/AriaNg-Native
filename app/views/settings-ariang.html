@@ -291,21 +291,15 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row" ng-if="context.magnetProtocolStatus">
+                    <div class="row" ng-if="context.nativeSettings.enableMagnetProtocol && context.magnetProtocolStatus">
                         <div class="setting-key setting-key-without-desc col-sm-4">
                             <span translate>Default magnet handler status</span>
                         </div>
                         <div class="setting-value col-sm-8">
                             <span ng-if="context.magnetProtocolStatus.isDefault" translate>Default</span>
                             <span ng-if="!context.magnetProtocolStatus.isDefault" translate>Not default</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="setting-key setting-key-without-desc col-sm-4">
-                            <span translate>Default magnet app</span>
-                        </div>
-                        <div class="setting-value col-sm-8">
-                            <button class="btn btn-default" type="button" ng-click="openSystemDefaultAppsSetting()">
+                            <button class="btn btn-default pull-right" type="button" ng-click="openSystemDefaultAppsSetting()"
+                                    ng-disabled="context.magnetProtocolStatus.isDefault">
                                 <span translate>Open default apps settings</span>
                             </button>
                         </div>
