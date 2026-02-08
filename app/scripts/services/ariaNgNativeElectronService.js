@@ -202,6 +202,12 @@
             setExecDetachedCommandOnStartup: function (value) {
                 invokeMainProcessMethod('render-set-native-config-exec-detached-command-on-startup', value);
             },
+            setEnableMagnetProtocol: function (value) {
+                invokeMainProcessMethod('render-set-native-config-enable-magnet-protocol', value);
+            },
+            openSystemDefaultAppsSetting: function () {
+                return invokeMainProcessMethodAsync('render-open-system-default-apps-setting');
+            },
             getLastCheckUpdatesTimeAsync: function (callback) {
                 return invokeMainProcessMethodAsync('render-get-native-config-last-check-updates-time')
                     .then(function onReceive(lastCheckUpdatesTime) {

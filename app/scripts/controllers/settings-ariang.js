@@ -48,6 +48,8 @@
                 config.execCommandOptionsOnStartup = 'as-detached-process';
             }
 
+            config.enableMagnetProtocol = originalConfig.enableMagnetProtocol !== false;
+
             return config;
         };
 
@@ -70,6 +72,7 @@
             importNativeSetting(settings, 'execCommandOnStartup', $scope.setExecCommandOnStartup);
             importNativeSetting(settings, 'execCommandArgumentsOnStartup', $scope.setExecCommandArgumentsOnStartup);
             importNativeSetting(settings, 'execCommandOptionsOnStartup', $scope.setExecCommandOptionsOnStartup);
+            importNativeSetting(settings, 'enableMagnetProtocol', $scope.setEnableMagnetProtocol);
             ariaNgSettingService.importAllOptions(settings);
         };
 
@@ -437,6 +440,20 @@
             } else if (value === 'as-detached-process') {
                 ariaNgNativeElectronService.setExecDetachedCommandOnStartup(true);
             }
+        };
+
+        $scope.setEnableMagnetProtocol = function (value) {
+            ariaNgNativeElectronService.setEnableMagnetProtocol(value);
+        };
+
+        $scope.openSystemDefaultAppsSetting = function () {
+            ariaNgNativeElectronService.openSystemDefaultAppsSetting().then(function (success) {
+                if (!success) {
+                    ariaNgCommonService.showError('This feature is not supported on your system.');
+                }
+            }).catch(function () {
+                ariaNgCommonService.showError('Failed to open system settings.');
+            });
         };
 
         $scope.browseAndSetExecCommandOnStartup = function () {

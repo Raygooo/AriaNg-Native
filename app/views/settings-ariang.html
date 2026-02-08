@@ -282,6 +282,27 @@
                     </div>
                     <div class="row">
                         <div class="setting-key setting-key-without-desc col-sm-4">
+                            <span translate>Handle Magnet Links</span>
+                        </div>
+                        <div class="setting-value col-sm-8">
+                            <select class="form-control" style="width: 100%;" ng-model="context.nativeSettings.enableMagnetProtocol"
+                                    ng-change="setEnableMagnetProtocol(context.nativeSettings.enableMagnetProtocol)"
+                                    ng-options="option.value as (option.name | translate) for option in context.trueFalseOptions">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="setting-key setting-key-without-desc col-sm-4">
+                            <span translate>Default Magnet App</span>
+                        </div>
+                        <div class="setting-value col-sm-8">
+                            <button class="btn btn-default" type="button" ng-click="openSystemDefaultAppsSetting()">
+                                <span translate>Open System Default Apps Settings</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="setting-key setting-key-without-desc col-sm-4">
                             <span translate>RPC List Display Order</span>
                             <span class="asterisk">*</span>
                         </div>
