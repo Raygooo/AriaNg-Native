@@ -807,3 +807,6 @@ stop.name=Tempo di arresto automatico
 stop.description=
 truncate-console-readout.name=Tronca l'output della console
 truncate-console-readout.description=Tronca l'output della console su una singola riga.
+Handle magnet links=Gestisci link magnet
+Default magnet app=App predefinita per i link magnet
+Open default apps settings=Apri le impostazioni delle app predefinite

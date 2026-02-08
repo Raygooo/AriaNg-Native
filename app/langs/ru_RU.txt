@@ -807,3 +807,6 @@ stop.name=Время автоматической остановки
 stop.description=Останавливает все активные загрузки и завершает работу aria2.
 truncate-console-readout.name=Обрезка вывода консоли
 truncate-console-readout.description=Обрезает вывод консоли до одной строки.
+Handle magnet links=Обрабатывать magnet-ссылки
+Default magnet app=Приложение по умолчанию для magnet-ссылок
+Open default apps settings=Открыть настройки приложений по умолчанию
